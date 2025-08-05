@@ -1,0 +1,143 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #212121;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Navigation bar */
+nav {
+    background: #191a1d;
+    padding: 14px 30px;
+    display: flex;
+    gap: 28px;
+    font-size: 17px;
+    border-bottom: 1px solid #232323;
+}
+nav a {
+    color: #ffd966;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #fff;
+}
+
+/* Wrapper */
+#wrapper {
+    background: #333;
+    width: 380px;
+    max-width: 96vw;
+    margin: 48px auto 0 auto;
+    border-radius: 10px;
+    padding: 32px 28px 26px 28px;
+    box-shadow: 0 4px 24px #181818c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Headings and Info */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+#wrapper p {
+    margin-bottom: 8px;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+/* Form styles */
+.form {
+    margin: 25px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.form label {
+    font-size: 1.08rem;
+    margin-bottom: 3px;
+    letter-spacing: 0.01rem;
+}
+.guessField {
+    padding: 8px 12px;
+    border: 1.3px solid #666;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 6px;
+    width: 135px;
+    text-align: center;
+    background: #232323;
+    color: #fff;
+    transition: border 0.15s;
+}
+.guessField:focus {
+    border: 1.6px solid #ffd966;
+}
+.guessSubmit {
+    padding: 8px 22px;
+    margin-top: 8px;
+    background: #ffd966;
+    border: none;
+    border-radius: 5px;
+    color: #202020;
+    font-weight: bold;
+    font-size: 1.08rem;
+    cursor: pointer;
+    transition: background 0.23s;
+}
+.guessSubmit:hover {
+    background: #ffc300;
+}
+
+/* Result area */
+.resultParas {
+    width: 100%;
+    background: #252526;
+    border-radius: 7px;
+    padding: 17px 15px 13px 15px;
+    margin-top: 12px;
+    box-shadow: 0 2px 8px #15161833;
+}
+.resultParas p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+span.guesses {
+    color: #ffd966;
+    font-weight: bold;
+    word-break: break-all;
+    letter-spacing: 0.01em;
+}
+span.lastResult {
+    color: #66ff90;
+    font-weight: bold;
+}
+.lowOrHi {
+    font-size: 1.06rem;
+    font-weight: 500;
+    color: #46cdff;
+    margin-top: 6px;
+}
+
+/* Responsive design */
+@media (max-width: 460px) {
+    #wrapper {
+        width: 97vw;
+        padding: 15px 5px 20px 5px;
+}
+}
